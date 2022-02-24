@@ -1,0 +1,178 @@
+/*  Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* header part style */
+.header{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.header-content{
+    padding: 70px 0;
+    width: 580px;
+    position: relative;
+    transition: transform 3s;
+}
+.header-content h1{
+    font-size:50px;
+    margin-bottom: -10px;
+}
+.header-content a{
+    text-decoration: none;
+    background-color: #2827CC;
+    color: white;
+    border: 1px solid #2827CC;
+    border-radius: 25px;
+    padding: 10px 15px;
+}
+.header-content a .fas{
+    padding-left: 10px;
+}
+.header-content:hover{
+    transform: translate(50px,0);
+}
+.header-banner{
+    padding-top: 50px;
+}
+
+/* popular cpllections part styles */
+.section-title{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.popular-collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.popular-collection{
+    box-shadow: 5px 5px 20px #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}
+.popular-collection h2{
+    font-size: 25px;
+}
+span .dollar{
+   font-size: 35px;
+}
+.popular-collection p{
+    font-size: 15px;
+    line-height: 0.7;
+}
+.rating{
+    display: flex;
+}
+.star-icon{
+     color: #FFC908;
+     margin-top: 8px;
+     padding-right: 20px;
+}
+#see-more-btn{
+    text-align: right;
+    margin-top: 50px;
+    padding-right: 155px;
+    margin-bottom: 100px;
+}
+#see-more-btn a{
+    text-decoration: none;
+    color: #142F43;
+    text-align: right;
+}
+#see-more-btn .fas{
+    padding-left: 10px;
+}
+
+/* headphone collection styles */
+.headphone-collections{
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.headphone-collection{
+    width:300px;
+    height:300px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px gray;;
+    padding: 10px;
+    position: relative;
+}
+.photo img{
+    width: 100%;
+    border-radius: 5px;
+}
+.photo-detail{
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    background-color: #142F43;
+    color:white;
+    padding: 15px;
+    padding-top: 85px;
+    }
+    .headphone-collection:hover .photo-detail{
+        display: block;
+    }
+
+    /* footers part */
+
+    footer{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        background-color: #142F43;
+        padding: 20px 0;
+    }
+    footer .fab{
+        padding: 0 8px;
+    }
+
+    /* for tablet device */
+    @media only screen and (min-width:688px) and (max-width:992px){
+        /* header part media query style */
+        .header{
+            width: 100%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-content{
+            width: 600px;
+        }
+        .header-content h1{
+            font-size: 36px;
+        }
+
+        /* popular collection part media query style */
+        .popular-collections{
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        /* headphone collection part media query style */
+        .headphone-collections{
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        .headphone-collection{
+            margin-bottom: 20px;
+        }
+
+
+    }
